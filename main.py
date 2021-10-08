@@ -1,6 +1,6 @@
 import sqlite3
 from datetime import datetime
-
+#FOR TESTING
 # текущие дата и время
 current_date = datetime.now().date()
 current_time = str(datetime.now().time().hour) + ':' + str(datetime.now().time().minute)
@@ -26,9 +26,9 @@ def insert_into_db(row, spaces_count):
 print('Текущая дата:', current_date, ', время:', current_time)
 
 # начальные значения количества рядов на парковке [19, 10, 17]
-#print('Запись первого ряда.')
-#insert_into_db(1, 1)
+print('Запись первого ряда.')
+insert_into_db(1, 1)
 print('Запись второго ряда.')
 insert_into_db(2, 2)
-#print('Запись третьего ряда..')
-#insert_into_db(3, 3)
+print('Запись третьего ряда..')
+insert_into_db(3, 3)
