@@ -1,6 +1,6 @@
 import sqlite3
 from datetime import datetime
-#FOR TESTING
+
 # текущие дата и время
 current_date = datetime.now().date()
 current_time = str(datetime.now().time().hour) + ':' + str(datetime.now().time().minute)
@@ -18,6 +18,7 @@ def insert_into_db(row, spaces_count):
         cursor.execute('INSERT INTO parking_space VALUES (?, ?, ?, ?, ?, ?)', values)
         conn.commit()
 
+# для создания файла базы данных и таблицы
 # cursor.execute("""CREATE TABLE parking_space
 #                 (row integer, col integer, brand text, color text, date text, time text)
 #                """)
